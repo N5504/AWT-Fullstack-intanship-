@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>first html page</title>
+
+</head>
+
+<style>
+
+    table,
+
+    th,
+
+    td {
+
+        border: 2px solid rgb(255, 0, 0) ;
+
+    }
+
+</style>
+
+<body style="background-image: url(1004017.png);">
+
+    <p>its my first web page</p>
+
+    <h1 style="color:rgb(24, 214, 72)" :> text </h1>
+
+    <h2>text</h2>
+
+    <br>
+
+    <h3>text</h3>
+
+    <h4>text</h4>
+
+    <hr>
+
+    <ul style="list-style: lower-alpha;">
+
+        <li>web pager</li>
+
+        <li>new web page</li>
+
+    </ul>
+
+    <hr>
+
+    <ol>
+
+        <li>web pager</li>
+
+        <li>new web page</li>
+
+    </ol>
+
+    <hr>
+
+<a href=https://www.google.com/search?q=silver+oak+university&oq=silvwe&aqs=chrome.1.69i57j0i10i131i433i512j0i10i433i457i512j0i10i402i512j0i402i650j0i10i433i512l3j0i10i512j0i10i131i433i512.4951j0j7&sourceid=chrome&ie=UTF-8"">silver oak</a>
+
+<br>
+
+<img  style="height: 200px;" width=" 200px" src="pexels-cesar-perez-733745.jpg" >
+
+    
+
+</body>
+
+</html>
