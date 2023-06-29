@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js ChangeHtML</title>
+    <style>
+        #demo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+        }
+
+        button{
+            border-radius: 4px;
+            background-color: darkblue;
+            color: aqua;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            color: rgb(8, 44, 44);
+            background-color: burlywood;
+        }
+        
+    </style>
+</head>
+<body>
+    <p id="demo">
+        Js can change Html
+    </p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = " Hello JavaScript"'>Next</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = " JS Can Change Html"'>Previous</button>
+
+</body>
+</html>
