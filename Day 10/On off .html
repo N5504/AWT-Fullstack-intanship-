@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On-Off</title>
+    <style>
+        button {
+            border-radius: 4px;
+            background-color: darkblue;
+            color: aqua;
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: rgb(8, 44, 44);
+            background-color: burlywood;
+        }
+
+        #myImage{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='sun.png'">Sun</button>
+
+    <img id="myImage" src="Sun.png" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='mOON.jpg'">MOON</button>
+9 ṁ,,,  
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
