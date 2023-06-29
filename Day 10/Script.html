@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Script_Tag</title>
+
+    <style>
+        button {
+            border-radius: 4px;
+            background-color: darkblue;
+            color: aqua;
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+            margin: 25px;
+            margin: 10px;
+
+        }
+
+        button:hover {
+            color: rgb(8, 44, 44);
+            background-color: burlywood;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+            
+        }
+        function myFun() {
+            document.getElementById("demo").innerHTML = "Demo JavaScript in Head";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2 id="demo">Demo JavaScript in Head</h2>
+
+    <!-- <p id="demo">A Paragraph.</p> -->
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    <button type="button" onclick="myFun()">Undo Text</button>
+
+</body>
+
+</html>
