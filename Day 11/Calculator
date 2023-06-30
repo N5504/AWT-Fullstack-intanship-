@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Function Calctulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            background: -webkit-linear-gradient(#087377, #bb1f46);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bolder;
+            font-size: 60px;
+            cursor: context-menu;
+        }
+
+        #calculator {
+            margin: 0 auto;
+            width: 300px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            /* display: block; */
+            /* width: 100%; */
+            height: 60px;
+            width: 100px;
+            padding: 10px;
+            background-color: #4e4caf;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 9px;
+        }
+
+        button:hover {
+            background-color: #9545a0;
+            color: #f8f8f8;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-size: 30px;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(192, 29, 64);
+            color: white;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+
+    <script>
+        function add() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerHTML = "Result: " + sum;
+        }
+
+        function subtract() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var sub = num1 - num2;
+            document.getElementById("result").innerHTML = "Result: " + sub;
+        }
+
+        function multiply() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var multi = num1 * num2;
+            document.getElementById("result").innerHTML = "Result: " + multi;
+        }
+
+        function divide() {
+            var multi = num1 * num2;
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            if (num2 !== 0) {
+                var Ans = num1 / num2;
+                document.getElementById("result").innerHTML = "Result: " + Ans;
+            } else {
+                document.getElementById("result").innerHTML = "Cannot divide by zero!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Calculator</h1>
+        <label for="">Number 1:</label>
+        <input type="number" id="num1" placeholder="Enter a Number">
+        <br>
+        <label for="">Number 2:</label>
+        <input type="number" id="num2" placeholder="Enter a Number">
+        <br>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+
+        <p id="result">Result:</p>
+
+    </div>
+
+</body>
+
+</html>
