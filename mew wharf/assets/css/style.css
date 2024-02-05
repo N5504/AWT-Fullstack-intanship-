@@ -1,0 +1,150 @@
+/* comun */
+li{
+    list-style-type: none;
+    padding:  0px 14px;
+    font-size: 18px;
+    
+}
+@media (max-width: 1480px)
+{
+  li{
+    padding:  0 7px;
+    font-size: 16px;
+    
+}
+}
+dl, ol, ul {   
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+body{
+    font-family: 'Bayon', sans-serif;
+    background-color: rgb(131, 98, 98);
+}
+a:hover{
+    display: block;
+}
+
+
+
+.offcanvas{
+    background-color: #00000087;
+}
+@media (max-width: 1199px)
+{
+  .offcanvas{
+    overflow: scroll;
+}
+  }
+
+
+header{
+    height: 60px;
+    top: 10%;
+    width: 100%;
+    }
+    @media (min-width: 1200px)
+    {
+    header .container {
+        max-width: 1580px;
+    }
+    }
+    @media (min-width: 1400px)
+{
+header .container {
+    max-width: 1580px;
+}
+}
+.header-section{
+    height: 60px;
+    background-color: #00000044;
+    border-block: 3px solid red;
+
+    position: relative;
+    clip-path:polygon(50% -87%, 100% 0, 98% 50%, 100% 100%, 99% 91%, 270% 1900%, 0 1178%, 0 100%, 2% 51%, 0 0);
+    /* clip-path:polygon(50% -87%, 100% 0, 98% 50%, 100% 100%, 99% 91%, 189% 719%, 0 1000%, 0 100%, 2% 51%, 0 0); */
+    }
+    @media (max-width: 1199px)
+{.header-section{
+  clip-path: none;
+}
+  }
+  .mega-menu{
+    width: 100%;
+    max-width: 1556px;
+    margin: 14px 0;
+    left: 0;
+    background-color: #00000087 ;
+    padding: 100px 0;    
+    }
+    @media (max-width: 1399px)
+{
+  .mega-menu{
+   padding: 50px 0;
+   
+    
+}
+}
+.rounded-circle{
+  border: 5px solid #fff;
+}
+    .menu-title{
+        font-size: 45px;
+        color: #fff;
+    }
+.mega-links .nav-item {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    color: #fff;
+}
+.mega-link > li{
+  margin: 10px 0;
+}
+.mega-link .nav-item {
+  display: inline-block;
+  border-block: 3px solid #ff00004a;
+  padding: 9px 0;  
+  font-size: 30px;
+  color: #ff0000;
+}
+.navbar-toggler {
+  right: 0;
+}
+.right{
+    border-right: 2px solid #ff0000;
+    line-height: 2;
+}
+
+
+
+  .dropdown-item:hover {
+    background-color: lightsalmon;
+    color: #fff;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+  .dropdown{
+    position: unset;
+  }
+  .dropdown:hover > .dropdown-menu,
+  .dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 1.125em;
+    margin-left: 0.125em;
+  }
+  @media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+    .dropend .dropdown-toggle {
+      margin-left: 0.5em;
+    }
+  }
